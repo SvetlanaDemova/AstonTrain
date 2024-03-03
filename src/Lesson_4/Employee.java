@@ -6,7 +6,7 @@ package Lesson_4;
         private String job_title;
         private String email;
         private String tel_number;
-        private int salary;
+        private double salary;
         private int age;
 
        // public String getName() {
@@ -57,7 +57,7 @@ package Lesson_4;
          //   this.age = age;
         //}
 
-        public Employee(String name, String job_title, String email, String tel_number, int salary, int age) {
+        public Employee(String name, String job_title, String email, String tel_number, double salary, int age) {
             this.name = name;
             this.job_title = job_title;
             this.email = email;
@@ -76,6 +76,10 @@ package Lesson_4;
                     ", salary=" + salary +
                     ", age=" + age +
                     '}';
+        }
+        public void infoEmployee()
+        {
+            System.out.println("Сотрудник "+" ФИО: "+name+" должность: "+job_title+" email: "+email+" тел: "+tel_number+" з/п: "+salary+" возраст: "+age);
         }
 
     }
